@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Rover</title>
+    <link rel="icon" href="e:\Nasa\NASA (artemis __)-Photoroom.png">
+    <link rel="stylesheet" href="Style-Opportunity.css">
+</head>
+
+<body>
+    <header>
+        <img src="e:\Nasa\After edit.png"> 
+        <h1>Opportunity Rover</h1> 
+
+
+        <div class="ship-container">
+    <input list="Ship" id="Ships Aviable" name="Ship Choose" placeholder="🚀Choose A Ship✨" oninput="navigateShip(this)">
+
+    <datalist id="Ship">
+        <option value="Home">
+        <option value="Spirit">
+        <option value="Apollo">
+        <option value="PERSEVERANCE">
+        <option value="Curiosity">
+    </datalist>
+    </div>
+
+    <script>
+        function navigateShip(input) {
+        const selectedValue = input.value;
+        if (selectedValue === "Home") {
+        window.location.href = "index.html";
+        }
+        else if (selectedValue === "Spirit"){
+        window.location.href = "Spirit.html"
+        }
+        else if (selectedValue === "Apollo"){
+        window.location.href = "Appollo.html"
+        }
+        else if (selectedValue === "PERSEVERANCE"){
+        window.location.href = "PERSEVERANCE.html"
+        }
+        else if (selectedValue === "Curiosity"){
+        window.location.href = "Curiosity.html"
+        }
+    }
+
+    </script>
+
+    </header>
+
+    <div class="opportunity-section">
+  <div class="opportunity-card">
+    <h2 class="opp-title">The Opportunity Rover Mission</h2>
+    <p class="opp-text">
+      It was an <span class="highlight">Opportunity</span> to uncover the mysteries of Mars to search if life on Mars has ever existed, even at early stages. 
+      The Opportunity Rover gave us more than <span class="glow-number">217,000</span> pictures.
+    </p>
+    <p class="opp-text">
+      But it couldn't prove that life ever existed on Mars; it only collected clues suggesting that Mars once had liquid water and other conditions that might have been suitable for life to exist.
+    </p>
+    <div class="opp-highlight-box">
+      <p>
+        Also, it was originally designed to last for <strong>90 Martian days</strong> (92.5 Earth days), but it exceeded it all by <strong>14 years, 47 days</strong>. Which was a scientific marvel!
+      </p>
+    </div>
+    <p class="opp-footer-text">So, let's dive deep into its journey and break it all down!! 🚀</p>
+  </div>
+</div>
+
+    <!-- pic1 -->
+    <center><div class="Detailed-box">
+        <h2 class="details-text">Some details about it</h2>
+        <img class="details" src="Pics of oprtunity ship/Detailed.jpeg">
+    </div></center>
+
+    <!-- pics2 of hover -->
+    <center><div class="oprtunity-Hover">
+        <div class="Text"> <h2 class="Opportunity-Hover-text">oprtunity Hover Pics.</h2></div>
+        <div class="two-pics">
+            <img class="Hover-pics" src="Pics of oprtunity ship/the ship.jpeg">
+            <img class="Hover-pics" src="Pics of oprtunity ship/ship again.jpeg">
+        </div>
+    </div></center>
+
+    <!-- Last pic roadmap -->
+    <center><div class="Roadmap-box">
+        <h2 class="Roadmap-text">The roadmap</h2>
+        <dev class="Talk-img">
+            <img class="roadmap" src="Pics of oprtunity ship/Roadmap.jpeg">
+            <p class="Roadmap-talk">
+                Traversing over 45 kilometers across the Martian 
+                terrain, this roadmap traces Opportunity's historic journey 
+                from Eagle Crater to Endeavour Crater, 
+                mapping years of relentless 
+                exploration and scientific breakthrough.</p>
+        </dev>
+    </div></center>
+
+    <!-- Comp. -->
+    <center><div class="Rec-box">
+        <h2 class="Rec-text">Records</h2>
+        <dev class="Rec-Talk" dir="ltr" style="text-align: left;">
+            <img class="Record" src="Pics of oprtunity ship/comp.jpeg">
+            <p class="Records-talk">
+                OUT-OF-THIS-WORLD RECORDS!<br>
+                Driving Distances on Mars and the Moon<br>
+                This chart shows how far each rover has driven, as of October 12, 2026.
+                The orange line is Mars. The gray line is the Moon.
+                <ol>
+                <li>Perseverance: 45.2 km, still driving on Mars<br></li>
+                <li>Opportunity: 45.16 km, 2004-2018, on Mars<br></li>
+                <li>Lunokhod 2 (USSR): 39 km, 1973, on the Moon<br></li>
+                <li>Curiosity: 38.15 km, still driving on Mars<br></li>
+                <li>Apollo 17 Lunar Rover: 35.74 km, 1972, on the Moon<br></li>
+                <li>Apollo 15 Lunar Rover: 27.8 km, 1971, on the Moon<br></li>
+                <li>Apollo 16 Lunar Rover: 27.1 km, 1972, on the Moon<br></li>
+                <li>Lunokhod 1 (USSR): 10.5 km, 1970-1971, on the Moon<br></li>
+                <li>Spirit: 7.7 km, 2004-2010, on Mars<br></li>
+                <li>Sojourner: 0.1 km, 1997, on Mars<br></li>
+                </ol>
+                The dashed line is the Marathon distance: 42.195 km.
+                Only Perseverance and Opportunity have driven farther than a marathon on another planet.
+                </p>
+        </dev>
+    </div></center>
+
+    <!-- <p>
+        Opportunity Rover, It was an Opportunity to uncover the mysteries of Mars
+        to search if life in Mars have been ever existed even at early 
+        lifes. Opportunity Rover had gave us more than 217 tousend of picture.
+        But it couldn't prove that life ever existed on Mars; it only collected clues suggesting 
+        that Mars once had liquid water and other conditions that might have been suitable for life to exist.
+        Also it was originally designed to last for a 90 Martian days = (92.5 Earth days)
+        ,But it exceeded it all by 14 years, 47 days. Which was a scintfic marvel. 
+        So, let's dive deep into its journey and break it all down!!
+    </p> -->
+    <!-- Timeline -->
+    <dev class="Timeline">
+        <dev class="c1">
+            <dev class="2003">
+                <h2>2003</h2>
+                <p>Launched from Earth on July 7, 2003</p>
+            </dev>
+        </dev>
+        <dev class="c2">
+            <dev class="2004.1">
+                <h2>2004</h2>
+                <p>Landed on Mars on January 25, 2004, in Eagle Crater</p>
+            </dev>
+        </dev>
+        <dev class="c3">
+            <dev class="2004.2">
+                <h2>2004</h2>
+                <p>Found evidence of ancient water on Mars</p>
+            </dev>
+        </dev>
+        <dev class="c4">
+            <dev class="2005">
+                <h2>2005</h2>
+                <p>Reached Endurance Crater</p>
+            </dev>
+        </dev>
+        <dev class="c5">
+            <dev class="2011">
+                <h2>2011</h2>
+                <p>Reached Endeavour Crater after a 3 year journey</p>
+            </dev>
+        </dev>
+        <dev class="c6">
+            <dev class="2015">
+                <h2>2015</h2>
+                <p>Completed a marathon, 42.195 km, the first on another planet</p>
+            </dev>  
+        </dev>
+        <dev class="c7">
+            <dev class="2018">
+                <h2>2018</h2>
+                <p>A giant dust storm hit Mars in June 2018, Opportunity went silent on June 10, 2018</p>
+            </dev>
+        </dev>
+        <dev class="c8">
+            <dev class="2019">
+                <h2>2019</h2>
+                <p>NASA declared the mission over on February 13, 2019, after 15 years and 45 km</p>
+            </dev>
+        </dev>
+    </dev>
+
+
+<!-- footer -->
+    <footer>
+        <p>😾Meow Meow😾</p>
+
+    </footer>
+
+</body>
+</html>
