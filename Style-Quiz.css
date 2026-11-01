@@ -162,3 +162,109 @@ footer p{
   text-align: center;
   width: 100%;
 }
+
+
+
+/* Quiz box  */
+
+.answer-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.user-answer-input {
+  width: 100%;
+  padding: 14px 25px;
+  background-color: #182232;
+  border: 2px solid #38bdf8;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.user-answer-input::placeholder {
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.user-answer-input:focus {
+  border-color: #00d8ff;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+
+
+/* ========================================== */
+
+.quiz-container {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-list li {
+  background-color: #182232;
+  border: 2px solid #38bdf8;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #cbd5e1;
+}
+
+.options-list li:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px); 
+}
+
+
+.options-list li.correct {
+  background-color: #22c55e !important;
+  border-color: #16a34a !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
+  transform: scale(1.02);
+}
+
+
+.options-list li.wrong {
+  background-color: #ef4444 !important;
+  border-color: #dc2626 !important;
+  color: #ffffff !important;
+  animation: shake 0.4s ease-in-out;
+}
+
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
