@@ -14,7 +14,7 @@ header{
     align-items: center;
     gap: 12px;
 }
-header img{
+.Nasa-logo{
     width: 35px;
     height: 35px;
     object-fit: contain;
