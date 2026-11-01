@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="icon" href="After edit.png">
+    <link rel="icon" href="e:\Nasa\NASA (artemis __)-Photoroom.png">
     <link rel="stylesheet" href="Style-Quiz.css">
+    <script src="Quiz.ls" defer></script>
 </head>
 <body>
 
     <header>
-        <img src="After edit.png"> 
+        <img src="e:\Nasa\After edit.png"> 
         <h1>َQuiz</h1> 
         <div class="ship-container">
     <input list="Ship" id="Ships Aviable" name="Ship Choose" placeholder="🚀Choose A Ship✨" oninput="navigateShip(this)">
@@ -56,88 +57,148 @@
 
 
     <div class="lunar-rover-container">
-    
-    <h2 class="Opportunity-Hover-text" style="text-align: center; margin-bottom: 25px;">Space Rovers Quiz 🚀</h2>
-
-    <!-- APOLLO LUNAR ROVER -->
-    <div class="opp-highlight-box" style="margin-bottom: 20px;">
-        <h3 style="color: #4dabf7; margin-bottom: 10px;">--- APOLLO LUNAR ROVER ---</h3>
         
-        <p class="opp-text"><strong>Q1:</strong> How was the Apollo Lunar Rover controlled?</p>
-        <p class="opp-text" style="margin-left: 15px;">A) Normal steering wheel <br><strong>B) Joystick in the middle</strong> <br>C) Remote from Earth</p>
-        <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> B - Joystick in the middle, no steering wheel</p> -->
+        <h2 class="Opportunity-Hover-text" style="text-align: center; margin-bottom: 25px;">Space Rovers Quiz 🚀</h2>
+
+        <!-- APOLLO LUNAR ROVER -->
+        <h3 class="Opportunity-Hover-text" style="text-align: center; margin-top: 20px;">--- APOLLO LUNAR ROVER ---</h3>
+        
+        <div class="quiz-container">
+            <p class="question-text">Q1: How was the Apollo Lunar Rover controlled?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, false)">A) Normal steering wheel</li>
+                <li onclick="checkAnswer(this, true)">B) Joystick in the middle</li>
+                <li onclick="checkAnswer(this, false)">C) Remote from Earth</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> B - Joystick in the middle, no steering wheel</p> -->
+        </div>
 
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
 
-        <p class="opp-text"><strong>Q2:</strong> What is the fastest speed ever driven on the Moon?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) 18 km/h (11.2 mph)</strong> <br>B) 100 km/h <br>C) 5 km/h</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - 18 km/h, by Eugene Cernan on Apollo 17 in 1972</p>
-    </div>
-
-    <!-- SPIRIT -->
-    <div class="opp-highlight-box" style="margin-bottom: 20px;">
-        <h3 style="color: #4dabf7; margin-bottom: 10px;">--- SPIRIT ---</h3>
-        
-        <p class="opp-text"><strong>Q1:</strong> Where did Spirit land on Mars?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) Gusev Crater</strong> <br>B) Gale Crater <br>C) Jezero Crater</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Gusev Crater, thought to be an ancient lake</p>
+        <div class="quiz-container">
+            <p class="question-text">Q2: What is the fastest speed ever driven on the Moon?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) 18 km/h (11.2 mph)</li>
+                <li onclick="checkAnswer(this, false)">B) 100 km/h</li>
+                <li onclick="checkAnswer(this, false)">C) 5 km/h</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - 18 km/h, by Eugene Cernan on Apollo 17 in 1972</p> -->
+        </div>
 
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
 
-        <p class="opp-text"><strong>Q2:</strong> Why did Spirit die?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) Got stuck in sand</strong> <br>B) Dust storm <br>C) Out of gas</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Got stuck in soft sand called Troy in 2009, solar panels could not get sun</p>
-    </div>
-
-    <!-- OPPORTUNITY -->
-    <div class="opp-highlight-box" style="margin-bottom: 20px;">
-        <h3 style="color: #4dabf7; margin-bottom: 10px;">--- OPPORTUNITY ---</h3>
+        <!-- SPIRIT -->
+        <h3 class="Opportunity-Hover-text" style="text-align: center; margin-top: 20px;">--- SPIRIT ---</h3>
         
-        <p class="opp-text"><strong>Q1:</strong> Opportunity was supposed to work 90 days, how long did it actually work?</p>
-        <p class="opp-text" style="margin-left: 15px;">A) 90 days <br>B) 2 years <br><strong>C) 14 years and 46 days</strong></p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> C - 14 years and 46 days, from 2004 to 2018</p>
+        <div class="quiz-container">
+            <p class="question-text">Q1: Where did Spirit land on Mars?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) Gusev Crater</li>
+                <li onclick="checkAnswer(this, false)">B) Gale Crater</li>
+                <li onclick="checkAnswer(this, false)">C) Jezero Crater</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Gusev Crater, landed on January 4, 2004</p> -->
+        </div>
 
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
 
-        <p class="opp-text"><strong>Q2:</strong> What was Opportunity's last message?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) My battery is low and it's getting dark</strong> <br>B) Goodbye <br>C) Help me</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - My battery is low and it's getting dark, due to global dust storm</p>
-    </div>
-
-    <!-- CURIOSITY -->
-    <div class="opp-highlight-box" style="margin-bottom: 20px;">
-        <h3 style="color: #4dabf7; margin-bottom: 10px;">--- CURIOSITY ---</h3>
-        
-        <p class="opp-text"><strong>Q1:</strong> What did Curiosity find at Mary Anning?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) Organic molecules Decane and Undecane</strong> <br>B) Gold <br>C) Humans</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Organic molecules Decane, Undecane and Dodecane, evidence for ancient life potential</p>
+        <div class="quiz-container">
+            <p class="question-text">Q2: Why did Spirit die?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) Got stuck in sand</li>
+                <li onclick="checkAnswer(this, false)">B) Dust storm</li>
+                <li onclick="checkAnswer(this, false)">C) Out of gas</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Got stuck in soft sand called Troy in 2009, solar panels could not get sun</p> -->
+        </div>
 
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
 
-        <p class="opp-text"><strong>Q2:</strong> What powers Curiosity?</p>
-        <p class="opp-text" style="margin-left: 15px;">A) Solar panels <br><strong>B) Nuclear battery RTG</strong> <br>C) Gasoline</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> B - Nuclear battery RTG, that's why it still works since 2012</p>
-    </div>
-
-    <!-- PERSEVERANCE -->
-    <div class="opp-highlight-box" style="margin-bottom: 20px;">
-        <h3 style="color: #4dabf7; margin-bottom: 10px;">--- PERSEVERANCE ---</h3>
+        <!-- OPPORTUNITY -->
+        <h3 class="Opportunity-Hover-text" style="text-align: center; margin-top: 20px;">--- OPPORTUNITY ---</h3>
         
-        <p class="opp-text"><strong>Q1:</strong> Where did Perseverance land on Mars?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) Jezero Crater</strong> <br>B) Eagle Crater <br>C) Gale Crater</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Jezero Crater, an ancient river delta</p>
+        <div class="quiz-container">
+            <p class="question-text">Q1: Opportunity was supposed to work 90 days, how long did it actually work?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, false)">A) 90 days</li>
+                <li onclick="checkAnswer(this, false)">B) 2 years</li>
+                <li onclick="checkAnswer(this, true)">C) 14 years and 46 days</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> C - 14 years and 46 days, from 2004 to 2018</p> -->
+        </div>
 
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
 
-        <p class="opp-text"><strong>Q2:</strong> What did Perseverance bring for the first time in history?</p>
-        <p class="opp-text" style="margin-left: 15px;"><strong>A) Helicopter Ingenuity</strong> <br>B) A human <br>C) A cat</p>
-        <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Helicopter Ingenuity, first thing to fly on another planet besides Earth</p>
+        <div class="quiz-container">
+            <p class="question-text">Q2: What was Opportunity's last message?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) My battery is low and it's getting dark</li>
+                <li onclick="checkAnswer(this, false)">B) Goodbye</li>
+                <li onclick="checkAnswer(this, false)">C) Help me</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - My battery is low and it's getting dark, due to global dust storm</p> -->
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+
+        <!-- CURIOSITY -->
+        <h3 class="Opportunity-Hover-text" style="text-align: center; margin-top: 20px;">--- CURIOSITY ---</h3>
+        
+        <div class="quiz-container">
+            <p class="question-text">Q1: What did Curiosity find at Mary Anning?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) Organic molecules Decane and Undecane</li>
+                <li onclick="checkAnswer(this, false)">B) Gold</li>
+                <li onclick="checkAnswer(this, false)">C) Humans</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Organic molecules Decane, Undecane and Dodecane, evidence for ancient life potential</p> -->
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+
+        <div class="quiz-container">
+            <p class="question-text">Q2: What powers Curiosity?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, false)">A) Solar panels</li>
+                <li onclick="checkAnswer(this, true)">B) Nuclear battery RTG</li>
+                <li onclick="checkAnswer(this, false)">C) Gasoline</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> B - Nuclear battery RTG, that's why it still works since 2012</p> -->
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+
+        <!-- PERSEVERANCE -->
+        <h3 class="Opportunity-Hover-text" style="text-align: center; margin-top: 20px;">--- PERSEVERANCE ---</h3>
+        
+        <div class="quiz-container">
+            <p class="question-text">Q1: Where did Perseverance land on Mars?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) Jezero Crater</li>
+                <li onclick="checkAnswer(this, false)">B) Eagle Crater</li>
+                <li onclick="checkAnswer(this, false)">C) Gale Crater</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Jezero Crater, an ancient river delta</p> -->
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+
+        <div class="quiz-container">
+            <p class="question-text">Q2: What did Perseverance bring for the first time in history?</p>
+            <ul class="options-list">
+                <li onclick="checkAnswer(this, true)">A) Helicopter Ingenuity</li>
+                <li onclick="checkAnswer(this, false)">B) A human</li>
+                <li onclick="checkAnswer(this, false)">C) A cat</li>
+            </ul>
+            <!-- <p class="opp-text" style="color: #69db7c; margin-top: 5px;"><strong>Answer:</strong> A - Helicopter Ingenuity, first thing to fly on another planet besides Earth</p> -->
+        </div>
+
+        <p class="opp-footer-text" style="text-align: center; margin-top: 20px;">Test your knowledge and explore the universe further!! 🚀</p>
+
     </div>
 
-    <p class="opp-footer-text" style="text-align: center; margin-top: 20px;">Test your knowledge and explore the universe further!! 🚀</p>
-</div>
-
-
+    <audio id="success-sound" src="Sounds/applepay.mp3"></audio>
+    <audio id="error-sound" src="Sounds/error_CDOxCYm.mp3"></audio>
 
 
     <footer>
