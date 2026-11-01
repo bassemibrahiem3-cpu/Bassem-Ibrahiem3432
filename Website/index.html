@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space Apps Chalenge</title>
+    <link rel="icon" href="e:\Nasa\NASA (artemis __)-Photoroom.png">
+    <link rel="stylesheet" href="Style-index.css">
+
+
+</head>
+<body>
+    <header>
+        <img src="e:\Nasa\After edit.png"> 
+
+        <h1>NASA Space Apps Challenge</h1> <br>
+        <!-- Abandoned but not Forgotten <br>
+        Storytelling about NASA's Discarded Equipment on the Moon and Mars -->
+    </header>
+
+
+    <center class="logo">
+        <img class="logo-img" src="e:\Nasa\After edit.png" title="NASA main logo"><br>    
+            <p class="klam">NASA Space Apps Challenge
+        <br> Abandoned but not Forgotten
+        <br> Storytelling about NASA's Discarded Equipment on the Moon and Mars
+        </p>
+    </center>
+
+    <div class="ship-container">
+    <input list="Ship" id="Ships Aviable" name="Ship Choose" placeholder="🚀Choose A Ship✨" oninput="navigateShip(this)">
+
+    <datalist id="Ship">
+        <option value="Opportunity">
+        <option value="Spirit">
+        <option value="Apollo">
+        <option value="PERSEVERANCE">
+        <option value="Curiosity">
+        <option value="Quiz">
+        
+    </datalist>
+    </div>
+
+    <script>
+        function navigateShip(input) {
+        const selectedValue = input.value;
+        if (selectedValue === "Opportunity") {
+        window.location.href = "Opportunity.html";
+        }
+        else if (selectedValue === "Spirit"){
+        window.location.href = "Spirit.html"
+        }
+        else if (selectedValue === "Apollo"){
+        window.location.href = "Appollo.html"
+        }
+        else if (selectedValue === "PERSEVERANCE"){
+        window.location.href = "PERSEVERANCE.html"
+        }
+        else if (selectedValue === "Curiosity"){
+        window.location.href = "Curiosity.html"
+        }
+        else if (selectedValue === "Quiz"){
+        window.location.href = "Quiz.html"
+        }
+    }
+
+    </script>
+
+    <footer>
+        <p>😾Meow Meow😾</p>
+
+    </footer>
+
+
+</body>
+</html>
